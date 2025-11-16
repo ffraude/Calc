@@ -1,0 +1,114 @@
+body {
+    background-color: #121412;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 98%;
+    height: 15vh;
+    font-size: 3rem;
+    text-align: right;
+    background-color: #323432;
+    color: #e0e0e0;
+    border: #323432 solid 2px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 8vw;
+    height: 8vw;
+    font-size: 2.5rem;
+    color: #e0e0e0;
+    border: #323432 solid 2px;
+    background-color: #121412;
+    cursor: pointer;
+}
+
+.calc {
+    width: min-content;
+    height: 90vh;
+    border: #323432 solid 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: end;
+    background-color: #000000;
+    border-radius: 2vh;
+    padding: 2vh;
+}
+
+.calc *:not(input) {
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.calc section {
+    flex-direction: row;
+    display: flex;
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    flex: 1;
+    margin: 5px auto;
+}
+
+.numbers section,
+.operations section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #1a1a1a;
+}
+
+#equals, #clear {
+    background-color: #200a00;
+}
+
+#equals:hover, #clear:hover {
+    background-color: #2d0e00;
+}
+
+.numbers section button:not(:last-of-type):not(:first-of-type) {
+    border-left: none;
+    border-right: none;
+}
+
+#zero {
+    border-right: none;
+}
+
+.operations button:not(:last-of-type):not(:first-of-type) {
+    border-top: none;
+    border-bottom: none;
+}
+
+img {
+    display: none;
+    position: fixed;
+    width: 20vw;
+}
+
+#mason {
+    left: 10%;
+}
+
+#mason2 {
+    right: 10%;
+}

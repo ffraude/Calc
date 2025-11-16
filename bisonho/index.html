@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diddy blud's calc (short for calculator btw)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calc">
+        <input type="text" name="display" id="display" size="15" disabled>
+        <section>
+            <div class="numbers">
+                <section>
+                    <button id="vii" onclick="showNumber(7)">7</button>
+                    <button id="viii" onclick="showNumber(8)">8</button>
+                    <button id="ix" onclick="showNumber(9)">9</button>
+                </section>
+                <section>
+                    <button id="iv" onclick="showNumber(4)">4</button>
+                    <button id="v" onclick="showNumber(5)">5</button>
+                    <button id="vi" onclick="showNumber(6)">6</button>
+                </section>
+                <section>
+                    <button id="i" onclick="showNumber(1)">1</button>
+                    <button id="ii" onclick="showNumber(2)">2</button>
+                    <button id="iii" onclick="showNumber(3)">3</button>
+                </section>
+                <section>
+                    <button id="zero" onclick="showNumber(0)">0</button>
+                    <button id="decimal" onclick="operators('.')">.</button>
+                </section>
+            </div>
+            <div class="operations">
+                <button id="clear" onclick="tuff(false);">C</button>
+                <button id="add" onclick="operators('+')">+</button>
+                <button id="subtract" onclick="operators('-')">-</button>
+                <button id="multiply" onclick="operators('*')">*</button>
+                <button id="divide" onclick="operators('/')">/</button>
+                <button id="equals" onclick="tuff(true);">=</button>
+            </div>
+    </div>
+    </section>
+    <img src="img/mason.gif" alt="" id="mason">
+    <img src="img/mason2.gif" alt="" id="mason2">
+    <script src="script.js"></script>
+</body>
+
+</html>
